@@ -1,0 +1,15 @@
+.hero{
+    height: 100vh;
+    background: linear-gradient(180deg,#fde1ff,#e1ffea22 60%);
+    display: flex;
+}
+.hero-left h2{
+    color:#090909;
+    font-size:26px;
+    font-weight: 600;
+}
+.hero-left p{
+    color: aqua;
+    font-size: 100px;
+    font-weight: 700;
+}
