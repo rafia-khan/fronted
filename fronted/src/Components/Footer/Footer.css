@@ -5,6 +5,7 @@
     align-items: center;
     gap: 50px;
     background: linear-gradient(180deg, #c0d2eb 0%,rgb(236, 208, 199) 60%);
+    
 }
 .footer-logo{
     display: flex;
@@ -51,6 +52,6 @@
     width: 80%;
     border: none;
     border-radius:10px;
-    height: 3px;
+    height: 1px;
     background: black;
 }

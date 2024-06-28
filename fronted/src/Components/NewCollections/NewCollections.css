@@ -3,7 +3,8 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    height: 90vh;
+    height: 550px;
+    background-color: rgb(243, 210, 231);
 
 }
 .new-collections h1{
