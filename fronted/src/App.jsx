@@ -9,6 +9,7 @@ import Cart from './Pages/Cart'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import LoginSignup from './Pages/LoginSignup';
+import Footer from './Components/Footer/Footer'
 function App() {
 
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path='/' element={<Cart/>}/>
             <Route path='/login' element={<LoginSignup/>}/>
           </Routes>
+          <Footer/>
         </BrowserRouter>
         </div>
         
