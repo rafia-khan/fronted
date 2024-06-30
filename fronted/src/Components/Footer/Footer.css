@@ -1,9 +1,10 @@
 .footer{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
     gap: 50px;
+    padding: 600px;
     background: linear-gradient(180deg, #c0d2eb 0%,rgb(236, 208, 199) 60%);
     
 }
