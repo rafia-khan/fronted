@@ -4,9 +4,15 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
-    padding: 600px;
+  
     background: linear-gradient(180deg, #c0d2eb 0%,rgb(236, 208, 199) 60%);
     
+}
+.padding600{
+    padding: 600px;
+}
+.padding100{
+    padding: 100px;
 }
 .footer-logo{
     display: flex;
@@ -15,7 +21,7 @@
 }
 .footer-logo p{
     color: cornflowerblue;
-    font-size: 46px;
+    font-size: 100px;
     font-weight: 700;
 }
 .footer-links{

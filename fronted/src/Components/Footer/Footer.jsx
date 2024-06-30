@@ -4,9 +4,13 @@ import footer_logo from '../Assets/logo_big.png'
 import instagram_icon from '../Assets/instagram_icon.png'
 import pintester_icon from '../Assets/pintester_icon.png'
 import whatsapp_icon from '../Assets/whatsapp_icon.png'
+import { useLocation } from 'react-router-dom'
 const Footer = () => {
+const {pathname}=  useLocation()
+const pathChecker=pathname.includes("/product/")
+
   return (
-    <div className='footer'>
+    <div className={`footer ${pathChecker? "padding600":"padding100"}`}>
       <div className="footer-logo">
         <img src={footer_logo} alt="" />
         <p>SHOPPER</p>
