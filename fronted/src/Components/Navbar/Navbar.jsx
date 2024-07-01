@@ -16,7 +16,7 @@ const Navbar = () => {
     <div className='navbar'>
       <div className="nav-logo">
         <img src={logo} alt="" />
-        <p>SHOPER</p>
+        <p>E_commerce</p>
       </div>
       <ul className="nav-manu"> 
             <li onClick={()=>{setMenu('shop')}}><Link style={{textDecoration:'none' }} to='/'>Shop</Link>{menu==='shop'?<hr/>:<></>}</li> 

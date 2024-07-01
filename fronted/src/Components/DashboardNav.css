@@ -1,22 +1,25 @@
 
 .na {
-    background-color: #8ad7f3;
-    color: white;
-    padding: 1rem;
+    background-color: #ef9ef2;
+    color: rgb(33, 31, 31);
+    padding: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
   }
   
   .navbar-brand {
     font-size: 1.5rem;
     font-weight: bold;
   }
-  
+
   .navbar-links {
     list-style: none;
     display: flex;
     gap: 1rem;
+    align-items:center;
+    
   }
   
   .navbar-links a {

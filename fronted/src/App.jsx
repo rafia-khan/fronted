@@ -1,7 +1,7 @@
 
 import './App.css'
 import Navbar from './Components/Navbar/Navbar'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import Shop from './Pages/Shop'
 import ShopCategory from './Pages/ShopCategory'
 import Product from './Pages/Product'
@@ -15,13 +15,14 @@ import women_banner from './Components/Assets/banner_women.png'
 import kid_banner from './Components/Assets/banner_kids.png';
 import Admin from './Components/Admin'
 function App() {
+const {pathname}=useLocation()
 
   return (
 
       
       <div>
-        <BrowserRouter>
-         <Navbar/>
+       {pathname!=='/admin'&&  <Navbar/>}
+        
           <Routes>
           <Route path='/dashboard' element={<Shop/>}/>
             <Route path='/' element={<Shop/>}/>
@@ -36,9 +37,11 @@ function App() {
             <Route path='/cart' element={<Cart/>}/>
             <Route path='/admin' element={<Admin/>}/>
             
+            
           </Routes>
-          <Footer/>
-        </BrowserRouter>
+          {pathname!=='/admin'&&  <Footer/>}
+         
+        
         </div>
         
   )

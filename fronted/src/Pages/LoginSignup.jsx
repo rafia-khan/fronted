@@ -12,7 +12,7 @@ const LoginSignup = () => {
           <input type="email" placeholder='Email Adress'/>
           <input type="password" placeholder='password' />
           </div>
-         <Link to="/admin">Continue</Link>
+        <button><Link to="/admin">Continue</Link></button> 
           <p className='loginsignup-login'>Already have an account?<span>Login here</span></p>
           <div className="loginsighup-agree">
             <input type="checkbox" name='' id='' />
