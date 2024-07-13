@@ -4,7 +4,7 @@ import footer_logo from '../Assets/logo_big.png'
 import instagram_icon from '../Assets/instagram_icon.png'
 import pintester_icon from '../Assets/pintester_icon.png'
 import whatsapp_icon from '../Assets/whatsapp_icon.png'
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 const Footer = () => {
 const {pathname}=  useLocation()
 const pathChecker=pathname.includes("/product/")
@@ -19,7 +19,7 @@ const pathChecker=pathname.includes("/product/")
         <li>Company</li>
         <li>Products</li>
         <li>Offices</li>
-        <li>About</li>
+        <li><Link to='/About'>About</Link ></li> 
         <li>Contact</li>
 
       </ul>
